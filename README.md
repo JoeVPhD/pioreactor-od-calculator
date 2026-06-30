@@ -6,33 +6,16 @@ A Jupyter notebook for loading, plotting, normalizing, and correcting **optical 
 
 ---
 
-## Example Output
-
-**Raw OD — All Units Overlay**
-![OD reading vs. time — all pioreactor units](images/od_reading_vs_hours_all_units.jpg)
-
-**Raw OD — Individual Unit Subplots**
-![OD reading vs. time — individual units](images/od_reading_vs_hours_subplots.jpg)
-
-**Smoothed OD — Rolling Median Overlay**
-![OD reading vs. time — smoothed with rolling median](images/od_reading_vs_hours_smoothed.jpg)
-
-**Exponential Growth Fit — Doubling Time per Unit**
-![OD reading with robust smoothing and best-fit exponential](images/od_reading_robust_expfit_subplots.jpg)
-
----
-
 ## Features
 
 - 📂 **Load CSV data** from PioReactor readings (auto-detects local vs. Google Colab environment)
 - 📊 **Plot OD vs. time** — individual unit subplots and all-units overlay
-- 🔧 **Optional downsampling** for large datasets
-- 🔀 **Filter by channel** (e.g., channel 2 only)
+- 🔧 **Optional SMoothing** to remove sawtooth Pioractor sampling
 - 📐 **Multiple normalization methods**:
   - `od_norm_t0` — divide by first OD value
   - `od_delta_t0` — subtract first OD value
   - `od_minmax` — rescale between 0 and 1
-- 📈 **OD Doubling Time calculator** — robust smoothing + sliding window linear regression on log-transformed OD, reporting growth rate *r* (h⁻¹), doubling time *T*d (h), and *R*²
+- 📈 **OD Doubling Time and Growth Rate calculator** — robust smoothing + sliding window linear regression on log-transformed OD, reporting growth rate *r* (h⁻¹), doubling time *T*d (h), and *R*²
 - 💾 **Auto-saves all figures** next to the source CSV file
 
 ---
