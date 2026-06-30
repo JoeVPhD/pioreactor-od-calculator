@@ -44,8 +44,7 @@ Two real datasets are included in `example_data/` (downsampled to every 10th poi
 
 | File | Experiment | Rows |
 |------|------------|------|
-| `od_readings-JUNE262026-all_units-20260424233439.csv` | JUNE262026 | ~40k |
-| `od_readings-JUNE172026-all_units-20251004012028.csv` | JUNE172026 | ~47k |
+| `od_readings-JUNE262026-all_units-20260424233439.csv` | JUNE262026 | ~6k |
 
 These are standard PioReactor exports and work as drop-in test files.
 
